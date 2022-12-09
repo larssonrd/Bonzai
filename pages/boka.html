@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script
+      src="https://kit.fontawesome.com/5ef20894d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>bonza.ai - Boka</title>
+</head>
+<body>
+  <header>
+        <div class="wrapper">
+          <section class="header__nav-container">
+            <a href="../index.html" class="header__logo-link">
+            <img
+              src="../assets/logo/bonz.ai-logo-white-landscape.png"
+              alt=""
+              class="header__logo"
+            /></a>
+            <nav class="header__nav-menu">
+              <a class="header__nav-link" href="../index.html">Hem</a>
+              <a class="header__nav-link" href="../pages/om-hotellet.html">Om oss</a>
+              <a class="header__nav-link" href="#">Kontakt</a>
+              <a class="header__nav-link" href="../pages/boka.html" id="header__nav-link--boka">Boka</a>
+            </nav>
+            <i class="fa-solid fa-bars header__hamburger-icon" id="header__hamburger-icon"></i>
+          </section>
+            </div>
+  </header>
+  <main class="boka-main">
+        <div class="wrapper">
+
+          <div class="booking-section-desktop">
+            <article class="calendar">
+              <div class="calendar__title">
+                <h3 class="booking-module-boka__h3-title">Välj datum</h3>
+              </div>
+              <div class="calendar__month">
+                <span><i class="fa-solid fa-arrow-left"></i></span> 
+                <span>December</span> 
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+              <div class="calendar__date">
+                <div class="calendar__day">Mån</div>
+                <div class="calendar__day">Tis</div>
+                <div class="calendar__day">Ons</div>
+                <div class="calendar__day">Tor</div>
+                <div class="calendar__day">Fre</div>
+                <div class="calendar__day">Lör</div>
+                <div class="calendar__day">Sön</div>
+                <div class="calendar__number">1</div>
+                <div class="calendar__number">2</div>
+                <div class="calendar__number">3</div>
+                <div class="calendar__number">4</div>
+                <div class="calendar__number">5</div>
+                <div class="calendar__number">6</div>
+                <div class="calendar__number">7</div>
+                <div class="calendar__number">8</div>
+                <div class="calendar__number">9</div>
+                <div class="calendar__number">10</div>
+                <div class="calendar__number">11</div>
+                <div class="calendar__number">12</div>
+                <div class="calendar__number">13</div>
+                <div class="calendar__number">14</div>
+                <div class="calendar__number">15</div>
+                <div class="calendar__number">16</div>
+                <div class="calendar__number">17</div>
+                <div class="calendar__number">18</div>
+                <div class="calendar__number">19</div>
+                <div class="calendar__number">20</div>
+                <div class="calendar__number">21</div>
+                <div class="calendar__number">22</div>
+                <div class="calendar__number">23</div>
+                <div class="calendar__number">24</div>
+                <div class="calendar__number">25</div>
+                <div class="calendar__number">26</div>
+                <div class="calendar__number">27</div>
+                <div class="calendar__number">28</div>
+                <div class="calendar__number">29</div>
+                <div class="calendar__number">30</div>
+                <div class="calendar__number">31</div>
+              </div>
+            </article>
+          
+            <section class="booking-module-boka-desktop">
+              <form action="#" class="booking-module-boka__form-desktop">
+                  <h3 class="booking-module-boka__title-desktop">Välj rum & antal gäster</h3>
+
+                <select
+                  id="booking-module-boka__form-valjbostad-desktop"
+                  name="booking-module-boka__form-valjbostad-desktop"
+                  aria-label="Välj bostad"
+                >
+                  <option value="1rum, 2 gäster">1 rum, 2 gäster</option>
+                  <option value="1rum, 3 gäster">1 rum, 3 gäster</option>
+                  <option value="2rum, 4 gäster">2 rum, 4 gäster</option>
+                </select>
+
+                <input 
+                  type="text" 
+                  name="booking-module-boka__form-code-desktop" 
+                  id="booking-module-boka__form-code-desktop" 
+                  placeholder="Jag har en kod"
+                  aria-label="Discountcode"
+                />
+
+                <button type="submit" class="booking-module-boka__form-btn-desktop">Sök</button>
+
+              </form>
+            </section>
+           </div>
+
+            <section class="booking-module-boka">
+                <form action="#" class="booking-module-boka__form">
+                    <h3 class="booking-module-boka__title">Sök & boka</h3>
+                  <input
+                    type="date"
+                    id="booking-module-boka__form-ankomstdatum"
+                    name="booking-module-boka__form-ankomstdatum"
+                    aria-label="Ankomstdatum"
+                  />
+
+                  <select
+                    id="booking-module-boka__form-valjbostad"
+                    name="booking-module-boka__form-valjbostad"
+                    aria-label="Välj bostad"
+                  >
+                    <option value="1rum, 2 gäster">1 rum, 2 gäster</option>
+                    <option value="1rum, 3 gäster">1 rum, 3 gäster</option>
+                    <option value="2rum, 4 gäster">2 rum, 4 gäster</option>
+                  </select>
+
+                  <input 
+                    type="text" 
+                    name="booking-module-boka__form-code" 
+                    id="booking-module-boka__form-code" 
+                    placeholder="Jag har en kod"
+                    aria-label="Discountcode"
+                   />
+
+                  <button type="submit" class="booking-module-boka__form-btn">Sök</button>
+
+                </form>
+              </section>
+
+              <article class="cabins__card">
+                <section class="cabins__card-img-container">
+                <img src="../assets/04-day.jpg" alt="cabin-1" class="cabins__card-img" />
+                </section>
+                <section class="cabins__card-content">
+                  <h3 class="cabins__card-title">AI Stuga 1</h3>
+                  <p class="cabins__card-text">
+                    Escape to an idyllic cabin for two and slow down in secluded
+                    simplicity. Perfect for honeymoons and romantic holidays in the
+                    New Zealand, nestled in the heart of the forest.
+                  </p>
+                  <ul class="cabins__card-list">
+                    <li class="cabins__card-list-item">Private outdoor hot tub</li>
+                    <li class="cabins__card-list-item">Log burner & sunken bath</li>
+                    <li class="cabins__card-list-item">Outdoor dining & gas barbecue</li>
+                    <li class="cabins__card-list-item">Double cocoon egg chair for two</li>
+                    <li class="cabins__card-list-item">Chilled prosecco & treats included on arrival</li>
+                  </ul>
+                </section>
+                <section class="cabins__card-icons">
+                  <div class="cabins__card-icons-bed cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bed.svg" alt="" /></i>
+                    <p class="cabins__card-text">1 sovrum</p>
+                  </div>
+                  <div class="cabins__card-icons-guests cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/people.svg" alt="" /></i>
+                    <p class="cabins__card-text">1-2 gäster</p>
+                  </div>
+                  <div class="cabins__card-icons-hot-tub cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/hot-tub.svg" alt="" /></i>
+                    <p class="cabins__card-text">Bubbelpool</p>
+                  </div>
+                  <div class="cabins__card-icons-fireplace cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/fireplace.svg" alt="" /></i>
+                    <p class="cabins__card-text">Vedbrasa</p>
+                  </div>
+                  <div class="cabins__card-icons-bbq cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bbq.svg" alt="" /></i>
+                    <p class="cabins__card-text">Kolgrill</p>
+                  </div>
+                  <button class="cabins__card-btn">Välj boende</button>
+                </section>
+              </article>
+
+              <article class="cabins__card">
+                <section class="cabins__card-img-container">
+                <img src="../assets/09-day.jpg" alt="" class="cabins__card-img"/>
+                </section>
+                <section class="cabins__card-content">
+                <h3 class="cabins__card-title">AI Stuga 2</h3>
+                <p class="cabins__card-text">
+                  Escape to an idyllic cabin for two and slow down in secluded
+                  simplicity. Perfect for honeymoons and romantic holidays in the
+                  New Zealand, nestled in the heart of the forest.
+                </p>
+                <ul class="cabins__card-list">
+                  <li class="cabins__card-list-item">Private outdoor hot tub</li>
+                  <li class="cabins__card-list-item">Log burner & sunken bath</li>
+                  <li class="cabins__card-list-item">Outdoor dining & gas barbecue</li>
+                  <li class="cabins__card-list-item">Double cocoon egg chair for two</li>
+                  <li class="cabins__card-list-item">Chilled prosecco & treats included on arrival</li>
+                </ul>
+              </section>
+                <section class="cabins__card-icons">
+                  <div class="cabins__card-icons-bed cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bed.svg" alt="" /></i>
+                    <p class="cabins__card-text">1 sovrum</p>
+                  </div>
+                  <div class="cabins__card-icons-guests cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/people.svg" alt="" /></i>
+                    <p class="cabins__card-text">1-2 gäster</p>
+                  </div>
+                  <div class="cabins__card-icons-hot-tub cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/hot-tub.svg" alt="" /></i>
+                    <p class="cabins__card-text">Bubbelpool</p>
+                  </div>
+                  <div class="cabins__card-icons-fireplace cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/fireplace.svg" alt="" /></i>
+                    <p class="cabins__card-text">Vedbrasa</p>
+                  </div>
+                  <div class="cabins__card-icons-bbq cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bbq.svg" alt="" /></i>
+                    <p class="cabins__card-text">Kolgrill</p>
+                  </div>
+                  <button class="cabins__card-btn">Välj boende</button>
+                </section>                
+              </article>
+
+              <article class="cabins__card">
+                <section class="cabins__card-img-container">
+                <img src="../assets/05-day.jpg" alt="" class="cabins__card-img"/>
+                </section>
+                <section class="cabins__card-content">
+                <h3 class="cabins__card-title">AI Stuga 3</h3>
+                <p class="cabins__card-text">
+                  Escape to an idyllic cabin for two and slow down in secluded
+                  simplicity. Perfect for honeymoons and romantic holidays in the
+                  New Zealand, nestled in the heart of the forest.
+                </p>
+                <ul class="cabins__card-list">
+                  <li class="cabins__card-list-item">Private outdoor hot tub</li>
+                  <li class="cabins__card-list-item">Log burner & sunken bath</li>
+                  <li class="cabins__card-list-item">Outdoor dining & gas barbecue</li>
+                  <li class="cabins__card-list-item">Double cocoon egg chair for two</li>
+                  <li class="cabins__card-list-item">Chilled prosecco & treats included on arrival</li>
+                </ul>
+              </section>
+                <section class="cabins__card-icons">
+                  <div class="cabins__card-icons-bed cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bed.svg" alt="" /></i>
+                    <p class="cabins__card-text">2 sovrum</p>
+                  </div>
+                  <div class="cabins__card-icons-guests cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/people.svg" alt="" /></i>
+                    <p class="cabins__card-text">1-3 gäster</p>
+                  </div>
+                  <div class="cabins__card-icons-hot-tub cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/hot-tub.svg" alt="" /></i>
+                    <p class="cabins__card-text">Bubbelpool</p>
+                  </div>
+                  <div class="cabins__card-icons-fireplace cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/fireplace.svg" alt="" /></i>
+                    <p class="cabins__card-text">Vedbrasa</p>
+                  </div>
+                  <div class="cabins__card-icons-bbq cabins__card-icons--flex">
+                    <i class="cabins__card-icon"><img src="../assets/icons/bbq.svg" alt="" /></i>
+                    <p class="cabins__card-text">Kolgrill</p>
+                  </div>
+                  <button class="cabins__card-btn">Välj boende</button>
+                </section>                
+              </article>
+        </section>
+    </div>
+  </main>
+    
+  <footer class="footer">
+        <div class="wrapper">
+          <img
+            src="../assets/logo/bonz.ai-logo-white-landscape.png"
+            alt=""
+            class="footer__logo"
+          />
+          <section class="footer__info">
+            <nav class="footer__nav">
+              <h3 class="footer__title">Meny</h3>
+              <a class="footer__link" href="#"><h4 class="footer__link-title">Hem</h4></a>
+              <a class="footer__link" href="#"><h4 class="footer__link-title">Om oss</h4</a>
+              <a class="footer__link" href="#"><h4 class="footer__link-title">Kontakt</h4></a>
+              <a class="footer__link" href="#"><h4 class="footer__link-title">Boka</h4></a>
+            </nav>
+            <article class="footer__business-details">
+              <h3 class="footer__title">Företagsuppgifter</h3>
+              <p class="footer__text">Bonz.ai AB</p>
+              <p class="footer__text">Org-nr: 556603-8963</p>
+            </article>
+            <article class="footer__postal-adress">
+              <h3 class="footer__title">Postadress</h3>
+              <p class="footer__text">9 Greenstone Way</p>
+              <p class="footer__text">Hairini, Tauranga 3112</p>
+              <p class="footer__text">Nya Zeeland</p>
+            </article>
+            <article class="footer__contact-info">
+              <h3 class="footer__title">Kontakt & adress</h3>
+              <p class="footer__text">9 Greenstone Way</p>
+              <p class="footer__text">Hairini, Tauranga 3112</p>
+              <p class="footer__text">Nya Zeeland</p>
+              <br>
+              <p class="footer__text">Epost: info@bonz.ai</p>
+              <p class="footer__text">Telefon: +4674546464</p>
+            </article>
+          </section>
+        </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

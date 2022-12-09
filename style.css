@@ -1,0 +1,1030 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Exo+2:wght@400;500;600;700;800;900&family=Exo:wght@400;500;600;700;800;900&display=swap");
+
+/* -------------------------------- */
+/* ----------- VARIABLES ---------- */
+/* -------------------------------- */
+
+:root {
+  --primary-color-1: 67, 75, 71;
+  --primary-color-2: #969683;
+  --primary-color-3: #5e7461;
+  --primary-color-4: #f0f0ec;
+  --primary-color-5: #284734;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/* -------------------------------- */
+/* ------------ RESETS ------------ */
+/* -------------------------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* HTML Font-size */
+html {
+  font-size: 62.5%;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Font sizes */
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: var(--fw-normal);
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: var(--fw-normal);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border-radius: 3px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* -------------------------------- */
+/* ---------- END RESETS ---------- */
+/* -------------------------------- */
+
+/* UTILITY CLASSES */
+
+.flex-column-input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+/* -------------------------------- */
+/* ------------ HEADER ------------ */
+/* -------------------------------- */
+
+header {
+  background-color: rgba(var(--primary-color-1));
+}
+
+.header__logo {
+  width: 157px;
+}
+
+.header__nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+
+.header__nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  flex-direction: column;
+}
+
+.header__nav-menu.active {
+  left: 0;
+  align-items: center;
+  background-color: var(--primary-color-3);
+  width: 100%;
+  height: 100vh;
+  font-weight: 600;
+  gap: 3.5rem;
+  padding-top: 6rem;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+}
+
+.header__hamburger-icon {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+}
+
+.header__img {
+  max-height: 650px;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+}
+
+.header__desktop {
+  display: none;
+}
+
+/* BOOKING MODULE HOMEPAGE DESKTOP */
+
+.header__desktop-booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary-color-3);
+  padding: 2rem;
+  border-radius: 3px;
+  gap: 2rem;
+}
+
+.header__desktop-booking-form input,
+.header__desktop-booking-form select {
+  height: 50px;
+  padding: 0 1rem;
+  border: none;
+}
+
+.header__desktop-booking-form select {
+  border-right: 1rem solid transparent;
+}
+
+.header__desktop-form-btn {
+  margin-left: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  height: 50px;
+  font-weight: var(--fw-medium);
+  align-self: end;
+}
+
+/* -------------------------------- */
+/*  BOOKING MODULE HOMEPAGE MOBILE  */
+/* -------------------------------- */
+
+.booking-module__form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--primary-color-3);
+  margin-top: 3rem;
+  border-radius: 3px;
+  color: white;
+}
+
+.booking-module__form input,
+.booking-module__form select {
+  height: 36px;
+  padding: 0 1rem;
+  border: none;
+}
+
+.booking-module__form select {
+  border-right: 1rem solid transparent;
+}
+
+.booking-module__form label,
+.header__desktop-booking-form label {
+  margin-bottom: 0.4rem;
+}
+
+.booking-module__form label:last-of-type {
+  margin-top: 1.2rem;
+}
+
+.booking-module__form-btn,
+.header__desktop-form-btn {
+  background-color: var(--primary-color-5);
+  color: white;
+  font-size: 2.4rem;
+  border: none;
+  border-radius: 3px;
+  font-weight: var(--fw-semi-bold);
+  margin-top: 2rem;
+}
+
+/* -------------------------------- */
+/* ------------- CABINS ----------- */
+/* -------------------------------- */
+
+.cabins {
+  text-align: center;
+}
+
+.cabins__title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+}
+
+.cabins__card {
+  margin-top: 3rem;
+  text-align: start;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.cabins__card-title {
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cabins__card-img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.cabins__card:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.cabins__card-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "bed guests"
+    "tub fireplace"
+    "bbq bbq"
+    "btn btn";
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cabins__card-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cabins__card-icons--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabins__card-icon {
+  width: 30px;
+}
+
+.cabins__card-icons-bed {
+  grid-area: bed;
+  justify-self: center;
+}
+
+.cabins__card-icons-guests {
+  grid-area: guests;
+  justify-self: center;
+}
+
+.cabins__card-icons-hot-tub {
+  grid-area: tub;
+  justify-self: center;
+}
+
+.cabins__card-icons-fireplace {
+  grid-area: fireplace;
+  justify-self: center;
+}
+
+.cabins__card-icons-bbq {
+  grid-area: bbq;
+  justify-self: center;
+}
+
+.cabins__card-btn {
+  width: 100%;
+  padding: 1.8rem;
+  color: white;
+  border: none;
+  background-color: var(--primary-color-2);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  align-self: stretch;
+  grid-area: btn;
+}
+
+/* -------------------------------- */
+/* ---------- EXPERIENCES --------- */
+/* -------------------------------- */
+
+.experience {
+  text-align: center;
+  background-color: var(--primary-color-4);
+}
+
+.experience__articles {
+  padding-bottom: 6rem;
+}
+
+.experience img:first-of-type {
+  margin-top: 3.5rem;
+}
+
+.experience__title {
+  font-weight: var(--fw-medium);
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.experience__article-title {
+  margin: 1.5rem 0;
+}
+
+.experience__article-text {
+  padding: 0 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.experience__title::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+  height: 1px;
+  border-bottom: 1px solid rgba(var(--primary-color-1), 0.5);
+}
+
+/* -------------------------------- */
+/* ---------- NEWSLETTER --------- */
+/* -------------------------------- */
+
+.newsletter {
+  text-align: center;
+  background-color: var(--primary-color-3);
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.newsletter__title {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-weight: var(--fw-medium);
+}
+
+.newsletter_text {
+  padding-bottom: 1.6rem;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.newsletter__form input {
+  padding: 1.7rem 1rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.newsletter__form-btn {
+  background-color: var(--primary-color-5);
+  color: white;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: var(--fw-semi-bold);
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter__social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.newsletter__social-icon {
+  width: 35px;
+}
+
+.newsletter__social-icons:hover {
+  cursor: pointer;
+}
+
+/* -------------------------------- */
+/* ------------ FOOTER ------------ */
+/* -------------------------------- */
+
+.footer {
+  background-color: rgba(var(--primary-color-1));
+  color: white;
+}
+
+.footer__logo {
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 300px;
+}
+
+.footer__info {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "meny bizdet" " postadr contact";
+  justify-items: start;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  grid-area: meny;
+}
+
+.footer__business-details {
+  grid-area: bizdet;
+  justify-self: end;
+}
+
+.footer__postal-adress {
+  grid-area: postadr;
+}
+
+.footer__contact-info {
+  grid-area: contact;
+  justify-self: end;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__title {
+  padding-top: 2rem;
+}
+
+/* -------------------------------- */
+/* -------- ABOUT US PAGE --------- */
+/* -------------------------------- */
+
+.about-us__main-title,
+.about-us__secondary-title {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 1rem;
+}
+
+.about-us__main-title {
+  font-size: 3.2rem;
+}
+
+.about-us__text {
+  text-align: center;
+}
+
+.about-us__facilities {
+  margin-top: 4rem;
+}
+
+.about-us__facilities-card {
+  margin-top: 3rem;
+}
+
+.about-us__facilities-card-img {
+  height: 225px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-us__facilities-card-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-us__facilities-card:last-of-type {
+  margin-bottom: 8rem;
+}
+
+/* -------------------------------- */
+/* ---------- BOKA PAGE ----------- */
+/* -------------------------------- */
+
+.booking-module-boka {
+  padding: 2rem;
+  background-color: var(--primary-color-3);
+  margin-top: 3rem;
+  border-radius: 3px;
+  color: white;
+}
+
+.booking-module-boka__form {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "date date"
+    "guests code"
+    "btn btn";
+  column-gap: 1rem;
+}
+
+.booking-module-boka__form input,
+.booking-module-boka__form select {
+  height: 36px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.booking-module-boka__form select {
+  border-right: 1rem solid transparent;
+}
+
+.booking-module-boka__title {
+  grid-area: title;
+  justify-self: center;
+}
+
+#booking-module-boka__form-ankomstdatum {
+  grid-area: date;
+}
+
+#booking-module-boka__form-valjbostad,
+#booking-module-boka__form-valjbostad-desktop {
+  grid-area: guests;
+  width: 100%;
+}
+
+#booking-module-boka__form-code,
+#booking-module-boka__form-code-desktop {
+  grid-area: code;
+  width: 100%;
+  background-image: url(./assets/icons/key.svg);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.booking-module-boka__form-btn {
+  grid-area: btn;
+  background-color: var(--primary-color-5);
+  color: white;
+  font-size: 2.4rem;
+  border: none;
+  border-radius: 3px;
+  font-weight: var(--fw-semi-bold);
+  margin-top: 2rem;
+}
+
+/* BOOKING MODULE BOKA PAGE DESKTOP */
+
+.calendar {
+  width: 350px;
+  background-color: var(--primary-color-3);
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calendar__title {
+  font-size: 2rem;
+  font-weight: var(--fw-medium);
+  border-bottom: 2px solid white;
+  padding: 0.6rem 5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.calendar__month {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: var(--fw-medium);
+}
+
+.calendar__date {
+  padding: 20px 50px 30px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: var(--fw-medium);
+  color: white;
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: white;
+}
+
+.calendar__number:hover {
+  background-color: var(--primary-color-2);
+  cursor: pointer;
+}
+
+.booking-section-desktop {
+  display: none;
+}
+
+.booking-module-boka-desktop {
+  padding: 2rem;
+  background-color: var(--primary-color-3);
+  border-radius: 3px;
+  color: white;
+  height: 361px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.booking-module-boka__form-desktop {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "guests"
+    "code"
+    "btn";
+}
+
+.booking-module-boka__form-desktop input,
+.booking-module-boka__form-desktop select {
+  height: 50px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.booking-module-boka__form-btn-desktop {
+  grid-area: btn;
+  background-color: var(--primary-color-5);
+  color: white;
+  font-size: 2.4rem;
+  border: none;
+  border-radius: 3px;
+  font-weight: var(--fw-semi-bold);
+  margin-top: 110px;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.booking-module-boka__title-desktop {
+  grid-area: title;
+  justify-self: center;
+  padding-bottom: 1rem;
+}
+
+.booking-module-boka__form-desktop select {
+  border-right: 1rem solid transparent;
+}
+
+/* -------------------------------- */
+/* -------- MEDIA QUERIES --------- */
+/* -------------------------------- */
+
+/* ---------- 640px BREAKPOINT ---------- */
+
+@media (min-width: 640px) {
+  .footer__logo {
+    margin: 0;
+    max-width: 200px;
+  }
+
+  .footer__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* MQ640PX ABOUT US PAGE */
+
+  .about-us__facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about-us__facilities-card {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding-bottom: 4rem;
+    height: 420px;
+  }
+
+  .about-us__facilities-card-img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .about-us__facilities-card-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-us__facilities-card:last-of-type {
+    margin-bottom: 8rem;
+  }
+}
+
+/* ---------- 860px BREAKPOINT ---------- */
+
+@media (min-width: 860px) {
+  /* -------------------------------- */
+  /* ------ MQ860px NAVIGATION ------ */
+  /* -------------------------------- */
+
+  #header__hamburger-icon {
+    display: none;
+  }
+
+  .header__nav-container {
+    height: 100px;
+  }
+
+  .header__nav-menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    position: initial;
+  }
+
+  .header__nav-link {
+    font-size: 2rem;
+  }
+
+  .header__nav-link:hover {
+    text-decoration: underline;
+  }
+
+  #header__nav-link--boka {
+    background-color: var(--primary-color-2);
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    border-radius: 3px;
+  }
+
+  /* -------------------------------- */
+  /* ---- MQ860px BOOKING MODULE ---- */
+  /* -------------------------------- */
+
+  .booking-module__form {
+    display: none;
+  }
+
+  .header__desktop {
+    display: block;
+    background-image: url(./assets/02-day.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  /* -------------------------------- */
+  /* -------- MQ860px CABINS -------- */
+  /* -------------------------------- */
+
+  .cabins__title {
+    font-size: 4.2rem;
+  }
+
+  .cabins__card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .cabins__card-title {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cabins__card-img {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .cabins__card-content {
+    min-width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cabins__card-icons {
+    min-width: 25%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cabins__card-btn {
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 1rem 0;
+    justify-self: center;
+  }
+
+  /* -------------------------------- */
+  /* ------- MQ860px EXPERIENCE ----- */
+  /* -------------------------------- */
+  .experience__articles {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .experience__article-img {
+    object-fit: cover;
+    width: 100%;
+    height: 215px;
+  }
+
+  /* -------------------------------- */
+  /* ------- MQ860px NEWSLETTER ----- */
+  /* -------------------------------- */
+  .newsletter-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newsletter__subscribe {
+    text-align: start;
+    width: 50%;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .newsletter input {
+    min-width: 300px;
+  }
+
+  .newsletter__form-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* -------------------------------- */
+  /* --------- MQ860px FOOTER ------- */
+  /* -------------------------------- */
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* -------------------------------- */
+  /* ----- MQ860px ABOUT US PAGE ---- */
+  /* -------------------------------- */
+
+  .about-us__main-title {
+    font-size: 4.2rem;
+  }
+
+  .about-us__secondary-title {
+    font-size: 3.2rem;
+  }
+
+  .about-us__facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about-us__facilities-card {
+    height: 441px;
+  }
+
+  /* -------------------------------- */
+  /* ----- MQ860px BOKA PAGE ---- */
+  /* -------------------------------- */
+
+  .boka-main {
+    background-image: url(./assets/boka-background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .booking-module-boka {
+    display: none;
+  }
+
+  .booking-section-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}

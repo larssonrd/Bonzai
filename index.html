@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>bonz.ai - AI DRIVEN EKO LIVING</title>
+    <script
+      src="https://kit.fontawesome.com/5ef20894d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <section class="header__nav-container">
+          <a href="../index.html" class="header__logo-link">
+          <img
+            src="./assets/logo/bonz.ai-logo-white-landscape.png"
+            alt=""
+            class="header__logo"
+          /></a>
+          <nav class="header__nav-menu">
+            <a class="header__nav-link" href="./index.html">Hem</a>
+            <a class="header__nav-link" href="./pages/om-hotellet.html">Om oss</a>
+            <a class="header__nav-link" href="#">Kontakt</a>
+            <a class="header__nav-link" href="./pages/boka.html" id="header__nav-link--boka">Boka</a>
+          </nav>
+          <i class="fa-solid fa-bars header__hamburger-icon" id="header__hamburger-icon"></i>
+        </section>
+      </div>
+      <section class="header__desktop">
+        <article class="header__desktop-booking-module">
+          <form action="./pages/boka.html" class="header__desktop-booking-form">
+            <div class="flex-column-input">
+            <label for="header__desktop-booking-form-ankomstdatum">Ankomstdatum:</label>
+            <input
+              type="date"
+              id="header__desktop-booking-form-ankomstdatum"
+              name="header__desktop-booking-form-ankomstdatum"
+            />
+            </div>
+            <div class="flex-column-input">
+              <label for="header__desktop-booking-form-valjbostad"
+                >Välj bostad och gäster:</label
+              >
+              <select
+                id="header__desktop-booking-form-valjbostad"
+                name="header__desktop-booking-form-valjbostad"
+              >
+                <option value="1rum, 2 gäster">1 rum, 2 gäster</option>
+                <option value="1rum, 3 gäster">1 rum, 3 gäster</option>
+                <option value="2rum, 4 gäster">2 rum, 4 gäster</option>
+              </select>
+            </div>
+            <button type="submit" class="header__desktop-form-btn">Sök</button>
+          </form>
+        </article>
+      </section>
+      <img src="./assets/02-day.jpg" alt="" class="header__img" />
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="booking-module">
+          <form action="./pages/boka.html" class="booking-module__form">
+            <label for="booking-mobule__form-ankomstdatum">Ankomstdatum:</label>
+            <input
+              type="date"
+              id="booking-module__form-ankomstdatum"
+              name="booking-module__form-ankomstdatum"
+            />
+            <label for="booking-module__form-valjbostad"
+              >Välj bostad och gäster:</label
+            >
+            <select
+              id="booking-module__form-valjbostad"
+              name="booking-module__form-valjbostad"
+            >
+              <option value="1rum, 2 gäster">1 rum, 2 gäster</option>
+              <option value="1rum, 3 gäster">1 rum, 3 gäster</option>
+              <option value="2rum, 4 gäster">2 rum, 4 gäster</option>
+            </select>
+            <button type="submit" class="booking-module__form-btn">Sök</button>
+          </form>
+        </section>
+        <section class="cabins">
+          <h1 class="cabins__title">Våra AI Stugor</h1>
+          <p class="cabins__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequ. Amet minim mollit non deserunt ullamco est sit aliqua
+            dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation. Amet minim mollit non deserunt ullamco est sit aliqua
+            dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+
+          <article class="cabins__card">
+            <section class="cabins__card-img-container">
+            <img src="./assets/04-day.jpg" alt="cabin-1" class="cabins__card-img" />
+            </section>
+            <section class="cabins__card-content">
+              <h3 class="cabins__card-title">AI Stuga 1</h3>
+              <p class="cabins__card-text">
+                Escape to an idyllic cabin for two and slow down in secluded
+                simplicity. Perfect for honeymoons and romantic holidays in the
+                New Zealand, nestled in the heart of the forest.
+              </p>
+              <ul class="cabins__card-list">
+                <li class="cabins__card-list-item">Private outdoor hot tub</li>
+                <li class="cabins__card-list-item">Log burner & sunken bath</li>
+                <li class="cabins__card-list-item">Outdoor dining & gas barbecue</li>
+                <li class="cabins__card-list-item">Double cocoon egg chair for two</li>
+                <li class="cabins__card-list-item">Chilled prosecco & treats included on arrival</li>
+              </ul>
+            </section>
+            <section class="cabins__card-icons">
+              <div class="cabins__card-icons-bed cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/bed.svg" alt="" /></i>
+                <p class="cabins__card-text">1 sovrum</p>
+              </div>
+              <div class="cabins__card-icons-guests cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/people.svg" alt="" /></i>
+                <p class="cabins__card-text">1-2 gäster</p>
+              </div>
+              <div class="cabins__card-icons-hot-tub cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/hot-tub.svg" alt="" /></i>
+                <p class="cabins__card-text">Bubbelpool</p>
+              </div>
+              <div class="cabins__card-icons-fireplace cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/fireplace.svg" alt="" /></i>
+                <p class="cabins__card-text">Vedbrasa</p>
+              </div>
+              <div class="cabins__card-icons-bbq cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/bbq.svg" alt="" /></i>
+                <p class="cabins__card-text">Kolgrill</p>
+              </div>
+              <button class="cabins__card-btn">Välj boende</button>
+            </section>
+          </article>
+
+          <article class="cabins__card">
+            <section class="cabins__card-img-container">
+            <img src="./assets/09-day.jpg" alt="" class="cabins__card-img"/>
+            </section>
+            <section class="cabins__card-content">
+            <h3 class="cabins__card-title">AI Stuga 2</h3>
+            <p class="cabins__card-text">
+              Escape to an idyllic cabin for two and slow down in secluded
+              simplicity. Perfect for honeymoons and romantic holidays in the
+              New Zealand, nestled in the heart of the forest.
+            </p>
+            <ul class="cabins__card-list">
+              <li class="cabins__card-list-item">Private outdoor hot tub</li>
+              <li class="cabins__card-list-item">Log burner & sunken bath</li>
+              <li class="cabins__card-list-item">Outdoor dining & gas barbecue</li>
+              <li class="cabins__card-list-item">Double cocoon egg chair for two</li>
+              <li class="cabins__card-list-item">Chilled prosecco & treats included on arrival</li>
+            </ul>
+          </section>
+            <section class="cabins__card-icons">
+              <div class="cabins__card-icons-bed cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/bed.svg" alt="" /></i>
+                <p class="cabins__card-text">1 sovrum</p>
+              </div>
+              <div class="cabins__card-icons-guests cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/people.svg" alt="" /></i>
+                <p class="cabins__card-text">1-2 gäster</p>
+              </div>
+              <div class="cabins__card-icons-hot-tub cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/hot-tub.svg" alt="" /></i>
+                <p class="cabins__card-text">Bubbelpool</p>
+              </div>
+              <div class="cabins__card-icons-fireplace cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/fireplace.svg" alt="" /></i>
+                <p class="cabins__card-text">Vedbrasa</p>
+              </div>
+              <div class="cabins__card-icons-bbq cabins__card-icons--flex">
+                <i class="cabins__card-icon"><img src="./assets/icons/bbq.svg" alt="" /></i>
+                <p class="cabins__card-text">Kolgrill</p>
+              </div>
+              <button class="cabins__card-btn">Välj boende</button>
+            </section>
+            
+          </article>
+        </section>
+      </div>
+      <section class="experience">
+        <div class="wrapper">
+        <h2 class="experience__title">Upplevelser</h2>
+        <section class="experience__articles">
+          <article class="experience__article">
+          <img src="./assets/stars.jpg" alt="stars" class="experience__article-img" />
+          <h3 class="experience__article-title">Stjärnhimmel</h3>
+          <p class="experience__article-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet. Exercitation veniam consequat
+            sunt nostrud amet. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          </article>
+          <article class="experience__article">
+            <img src="./assets/hiking.jpg" alt="stars" class="experience__article-img" />
+            <h3 class="experience__article-title">Hiking</h3>
+            <p class="experience__article-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet. Exercitation veniam consequat
+              sunt nostrud amet. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+          <article class="experience__article">
+            <img src="./assets/lake.jpg" alt="stars" class="experience__article-img" />
+            <h3 class="experience__article-title">Bad & Bastu</h3>
+            <p class="experience__article-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet. Exercitation veniam consequat
+              sunt nostrud amet. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+        </section>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="wrapper">
+          <div class="newsletter-container">
+            <article class="newsletter__subscribe">
+              <h3 class="newsletter__title">Gå med i vårat nyhetsbrev!</h3>
+              <p class="newsletter_text">Få nyheter och erbjudanden på våra boenden</p>
+              <form action="#" class="newsletter__form">
+                <input
+                  type="email"
+                  name="newsletter__form-email"
+                  id="newsletter__form-email"
+                  placeholder="Emailadress"
+                />
+                <button type="submit" class="newsletter__form-btn">
+                  Premenurera
+                </button>
+              </form>
+            </article>  
+            <article class="newsletter__social">
+              <h3 class="newsletter__title">Följ oss på sociala medier</h3>
+              <div class="newsletter__social-icons">
+                <i class="newsletter__social-icon"><img src="./assets/icons/facebook.svg" alt="Facebook-icon" /></i>
+                <i class="newsletter__social-icon"><img src="./assets/icons/twitter.svg" alt="Twitter-icon" /></i>
+                <i class="newsletter__social-icon"><img src="./assets/icons/instagram.svg" alt="instagram-icon"/></i>
+                <i class="newsletter__social-icon"><img src="./assets/icons/youtube.svg" alt="Youtube-icon" /></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <img
+          src="./assets/logo/bonz.ai-logo-white-landscape.png"
+          alt=""
+          class="footer__logo"
+        />
+        <section class="footer__info">
+          <nav class="footer__nav">
+            <h3 class="footer__title">Meny</h3>
+            <a class="footer__link" href="#"><h4 class="footer__link-title">Hem</h4></a>
+            <a class="footer__link" href="#"><h4 class="footer__link-title">Om oss</h4</a>
+            <a class="footer__link" href="#"><h4 class="footer__link-title">Kontakt</h4></a>
+            <a class="footer__link" href="#"><h4 class="footer__link-title">Boka</h4></a>
+          </nav>
+          <article class="footer__business-details">
+            <h3 class="footer__title">Företagsuppgifter</h3>
+            <p class="footer__text">Bonz.ai AB</p>
+            <p class="footer__text">Org-nr: 556603-8963</p>
+          </article>
+          <article class="footer__postal-adress">
+            <h3 class="footer__title">Postadress</h3>
+            <p class="footer__text">9 Greenstone Way</p>
+            <p class="footer__text">Hairini, Tauranga 3112</p>
+            <p class="footer__text">Nya Zeeland</p>
+          </article>
+          <article class="footer__contact-info">
+            <h3 class="footer__title">Kontakt & adress</h3>
+            <p class="footer__text">9 Greenstone Way</p>
+            <p class="footer__text">Hairini, Tauranga 3112</p>
+            <p class="footer__text">Nya Zeeland</p>
+            <br>
+            <p class="footer__text">Epost: info@bonz.ai</p>
+            <p class="footer__text">Telefon: +4674546464</p>
+          </article>
+        </section>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
